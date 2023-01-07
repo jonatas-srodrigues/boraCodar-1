@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
+    gap: 3.2rem;
+
+    width: 656.19px;
+    height: 498px;
+}
+
+.headerCard {
+    display: flex;
+    flex-direction: column;
+    gap: 2.481rem;
+}
+
+.leftCards .card {
+    height: 100%;
+}
+
+.card {
+    background: #2A2141;
+
+    padding: 3.841rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2.481rem;
+    justify-content: space-between;
+
+    border-radius: 1.2rem;
+    transition: scale 400ms;
+}
+
+.card:hover {
+    scale: 1.075;
+    transition: scale 700ms;
+}
+
+.musicTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.musicTitle h1 {
+    font-size: 2.2rem;
+}
+
+.musicTitle p {
+    font-size: 1.8rem;
+    color: #ffffff94;
+}
+
+.btnMusic {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+    height: 4rem;
+    cursor: pointer;
+}
+
+.playBtn, .backBtn, .fowardBtn {
+    transition-duration: 200ms;
+}
+
+.playBtn:hover, .backBtn:hover, .fowardBtn:hover {
+    scale: 1.4;
+    transition-duration: 300ms;
+}
+
+.playerCounter {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.playerTimer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+    font-size: 1.2rem;
+    color: #ffffff94;
+}
+
+.progressBar {
+    width: 100%;
+    height: .8rem;
+    background: #ffffff25;
+
+    border-radius: 999rem;
+    padding: .1rem;
+}
+
+.progressPer {    
+    position: relative;
+    align-items: center;
+
+    height: 100%;
+    width: 85%;
+    border-radius: 999rem;
+
+    background: #ffffffc7;
+}
+
+.rightCards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+.rightCards .card {
+    padding: 2.81rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem;
+    height: 100%;
+}
+
+.rightCards .headerCard{
+    flex-direction: row;
+    height: 8.403rem;
+    width: 30rem;
+
+    justify-content: space-between;
+}
+
+.rightCards .musicTitle {
+    justify-content: center;
+}
+
+.rightCards .btnMusic {
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
